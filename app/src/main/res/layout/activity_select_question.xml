@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectQuestionActivity">
+
+    <TextView
+        android:id="@+id/selectQuestionText"
+        android:layout_width="290dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/group2"
+        android:layout_width="260dp"
+        android:layout_height="325dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/selectQuestionText"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/selectQuestionText"
+        app:layout_constraintTop_toBottomOf="@+id/selectQuestionText">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/sch1"
+            android:layout_width="260dp"
+            android:layout_height="65dp"
+            android:checkable="true"
+            android:textAlignment="center" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/sch2"
+            android:layout_width="260dp"
+            android:layout_height="65dp"
+            android:checkable="true"
+            android:textAlignment="center" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/sch3"
+            android:layout_width="260dp"
+            android:layout_height="65dp"
+            android:checkable="true"
+            android:textAlignment="center" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/sch4"
+            android:layout_width="260dp"
+            android:layout_height="65dp"
+            android:checkable="true"
+            android:textAlignment="center" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/sch5"
+            android:layout_width="260dp"
+            android:layout_height="65dp"
+            android:checkable="true"
+            android:textAlignment="center" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <Button
+        android:id="@+id/btnSelectQuestion"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:onClick="onSelectQuestion"
+        android:text="SELECT"
+        app:layout_constraintEnd_toEndOf="@+id/group2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/group2"
+        app:layout_constraintTop_toBottomOf="@+id/group2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Answer:"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/group2"
+        app:layout_constraintTop_toBottomOf="@+id/group2" />
+
+    <TextView
+        android:id="@+id/selectAnswerText"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/group2"
+        app:layout_constraintTop_toBottomOf="@+id/group2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Quexa</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_question">QuestionActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="duration_default">Default Duration Value: %1$s</string>
+    <string name="score_default">Default Score Value: %1$s</string>
+    <string name="level_default">Default Level Value: %1$s</string>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    tools:context=".PersonActivity">
+
+
+    <ImageView
+        android:id="@+id/personImg"
+        android:layout_width="366dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/idText"
+        android:layout_width="238dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/personImg"
+        app:layout_constraintStart_toStartOf="@+id/personImg"
+        app:layout_constraintTop_toBottomOf="@+id/personImg" />
+
+    <ImageButton
+        android:id="@+id/btnListQuestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddQuestion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/idText"
+        app:layout_constraintTop_toBottomOf="@+id/idText"
+        app:srcCompat="@drawable/ic_baseline_format_list_bulleted_24" />
+
+    <ImageButton
+        android:id="@+id/btnAddQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/idText"
+        app:layout_constraintTop_toBottomOf="@+id/idText"
+        app:srcCompat="@drawable/ic_baseline_add_circle_24" />
+
+    <ImageButton
+        android:id="@+id/btnCreateExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnListQuestions"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnListQuestions"
+        app:layout_constraintTop_toBottomOf="@+id/btnListQuestions"
+        app:srcCompat="@drawable/ic_baseline_grading_24" />
+
+    <ImageButton
+        android:id="@+id/btnExamSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddQuestion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnAddQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddQuestion"
+        app:srcCompat="@drawable/ic_baseline_settings_24" />
+
+    <ImageButton
+        android:id="@+id/btnSendExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCreateExam"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnCreateExam"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreateExam"
+        app:srcCompat="@drawable/ic_baseline_send_24" />
+
+    <ImageButton
+        android:id="@+id/btnExitApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnExamSettings"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnExamSettings"
+        app:layout_constraintTop_toBottomOf="@+id/btnExamSettings"
+        app:srcCompat="@drawable/ic_baseline_exit_to_app_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

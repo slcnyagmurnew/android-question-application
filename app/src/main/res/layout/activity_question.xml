@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity">
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="290dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/group1"
+        android:layout_width="260dp"
+        android:layout_height="325dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/questionText"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/questionText"
+        app:layout_constraintTop_toBottomOf="@+id/questionText"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/ch1"
+            android:layout_width="260dp"
+            android:layout_height="65dp"
+            android:checkable="true"
+            android:textAlignment="center" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/ch2"
+            android:layout_width="260dp"
+            android:layout_height="65dp"
+            android:checkable="true"
+            android:textAlignment="center" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/ch3"
+            android:layout_width="260dp"
+            android:layout_height="65dp"
+            android:checkable="true"
+            android:textAlignment="center" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/ch4"
+            android:layout_width="260dp"
+            android:layout_height="65dp"
+            android:checkable="true"
+            android:textAlignment="center" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/ch5"
+            android:layout_width="260dp"
+            android:layout_height="65dp"
+            android:checkable="true"
+            android:textAlignment="center" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <Button
+        android:id="@+id/btnUpdateQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:onClick="onUpdateQuestion"
+        android:text="update"
+        app:layout_constraintEnd_toEndOf="@+id/group1"
+        app:layout_constraintTop_toBottomOf="@+id/group1" />
+
+    <Button
+        android:id="@+id/btnDeleteQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:onClick="onDeleteQuestion"
+        android:text="delete"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpdateQuestion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/group1"
+        app:layout_constraintTop_toBottomOf="@+id/group1" />
+
+    <TextView
+        android:id="@+id/answerText"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/group1"
+        app:layout_constraintTop_toBottomOf="@+id/group1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Answer:"
+        app:layout_constraintStart_toStartOf="@+id/group1"
+        app:layout_constraintTop_toBottomOf="@+id/group1" />
+
+    <Button
+        android:id="@+id/btnSeeAttachment"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="onSeeAttachment"
+        android:text="See Attachment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnUpdateQuestion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnDeleteQuestion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
