@@ -70,7 +70,7 @@ public class AddQuestionActivity extends AppCompatActivity {
         return !(questionTxt.getText() == null || answer1.getText() == null
         || answer2.getText() == null || answer3.getText() == null
         || answer4.getText() == null || trueAnswer.getText() == null
-        || Integer.parseInt(trueAnswer.getText().toString()) > 4
+        || Integer.parseInt(trueAnswer.getText().toString()) > 5
         || trueAnswer.getText().toString().equals("")
         || Integer.parseInt(trueAnswer.getText().toString()) < 1
         || answer5.getText() == null);
